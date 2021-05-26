@@ -1,5 +1,6 @@
 import calendar
 import datetime
+
 import pandas
 
 # days range approximate
@@ -25,7 +26,7 @@ MONDAY = '1'
 TUESDAY = '2'
 WEDNESDAY = '3'
 
-formatted_data = pandas.read_csv("NIFTY 50_Data.csv").to_numpy()
+formatted_data = pandas.read_csv("nifty.csv").to_numpy()
 
 # daily counters
 under_1 = 0
@@ -171,9 +172,18 @@ weekly_lows = []
 monthly_highs = []
 monthly_lows = []
 
+daily_sum = 0
+weekly_sum = 0
+tuesday_sum = 0
+wednesday_sum = 0
+friday_sum = 0
+monday_sum = 0
+monthly_sum = 0
+
 
 def increment_daily_counters(diff):
-    global under_1, under_2, under_3, under_4, under_5, under_7point5, under_10, above_10
+    global under_1, under_2, under_3, under_4, under_5, under_7point5, under_10, above_10, daily_sum
+    daily_sum = daily_sum + abs(diff * 100)
     if abs(diff * 100) < 1:
         under_1 = under_1 + 1
     elif abs(diff * 100) < 2:
@@ -194,8 +204,9 @@ def increment_daily_counters(diff):
 
 def increment_weekly_counters(diff):
     global weekly_thursday_under_1, weekly_thursday_under_2, weekly_thursday_under_3, weekly_thursday_under_4, \
-        weekly_thursday_under_5, weekly_thursday_under_6, weekly_thursday_under_7, \
+        weekly_thursday_under_5, weekly_thursday_under_6, weekly_thursday_under_7, weekly_sum, \
         weekly_thursday_under_8, weekly_thursday_under_10, weekly_thursday_under_15, weekly_thursday_above_15
+    weekly_sum = weekly_sum + abs(diff * 100)
     if abs(diff * 100) < 1:
         weekly_thursday_under_1 = weekly_thursday_under_1 + 1
     elif abs(diff * 100) < 2:
@@ -222,8 +233,9 @@ def increment_weekly_counters(diff):
 
 def increment_tuesday_to_thursday_counters(diff):
     global weekly_tuesday_to_thursday_under_1, weekly_tuesday_to_thursday_under_2, weekly_tuesday_to_thursday_under_3, weekly_tuesday_to_thursday_under_4, \
-        weekly_tuesday_to_thursday_under_5, weekly_tuesday_to_thursday_under_6, weekly_tuesday_to_thursday_under_7, \
+        weekly_tuesday_to_thursday_under_5, weekly_tuesday_to_thursday_under_6, weekly_tuesday_to_thursday_under_7, tuesday_sum, \
         weekly_tuesday_to_thursday_under_8, weekly_tuesday_to_thursday_under_10, weekly_tuesday_to_thursday_under_15, weekly_tuesday_to_thursday_above_15
+    tuesday_sum = tuesday_sum + abs(diff * 100)
     if abs(diff * 100) < 1:
         weekly_tuesday_to_thursday_under_1 = weekly_tuesday_to_thursday_under_1 + 1
     elif abs(diff * 100) < 2:
@@ -250,8 +262,9 @@ def increment_tuesday_to_thursday_counters(diff):
 
 def increment_friday_to_thursday_counters(diff):
     global weekly_friday_to_thursday_under_1, weekly_friday_to_thursday_under_2, weekly_friday_to_thursday_under_3, weekly_friday_to_thursday_under_4, \
-        weekly_friday_to_thursday_under_5, weekly_friday_to_thursday_under_6, weekly_friday_to_thursday_under_7, \
+        weekly_friday_to_thursday_under_5, weekly_friday_to_thursday_under_6, weekly_friday_to_thursday_under_7, friday_sum, \
         weekly_friday_to_thursday_under_8, weekly_friday_to_thursday_under_10, weekly_friday_to_thursday_under_15, weekly_friday_to_thursday_above_15
+    friday_sum = friday_sum + abs(diff * 100)
     if abs(diff * 100) < 1:
         weekly_friday_to_thursday_under_1 = weekly_friday_to_thursday_under_1 + 1
     elif abs(diff * 100) < 2:
@@ -277,9 +290,10 @@ def increment_friday_to_thursday_counters(diff):
 
 
 def increment_wednesday_to_thursday_counters(diff):
-    global weekly_wednesday_to_thursday_under_1, weekly_wednesday_to_thursday_under_2, weekly_wednesday_to_thursday_under_3, weekly_wednesday_to_thursday_under_4, \
+    global weekly_wednesday_to_thursday_under_1, wednesday_sum, weekly_wednesday_to_thursday_under_2, weekly_wednesday_to_thursday_under_3, weekly_wednesday_to_thursday_under_4, \
         weekly_wednesday_to_thursday_under_5, weekly_wednesday_to_thursday_under_6, weekly_wednesday_to_thursday_under_7, \
         weekly_wednesday_to_thursday_under_8, weekly_wednesday_to_thursday_under_10, weekly_wednesday_to_thursday_under_15, weekly_wednesday_to_thursday_above_15
+    wednesday_sum = wednesday_sum + abs(diff * 100)
     if abs(diff * 100) < 1:
         weekly_wednesday_to_thursday_under_1 = weekly_wednesday_to_thursday_under_1 + 1
     elif abs(diff * 100) < 2:
@@ -305,9 +319,10 @@ def increment_wednesday_to_thursday_counters(diff):
 
 
 def increment_monday_to_thursday_counters(diff):
-    global weekly_monday_to_thursday_under_1, weekly_monday_to_thursday_under_2, weekly_monday_to_thursday_under_3, weekly_monday_to_thursday_under_4, \
+    global weekly_monday_to_thursday_under_1, monday_sum, weekly_monday_to_thursday_under_2, weekly_monday_to_thursday_under_3, weekly_monday_to_thursday_under_4, \
         weekly_monday_to_thursday_under_5, weekly_monday_to_thursday_under_6, weekly_monday_to_thursday_under_7, \
         weekly_monday_to_thursday_under_8, weekly_monday_to_thursday_under_10, weekly_monday_to_thursday_under_15, weekly_monday_to_thursday_above_15
+    monday_sum = monday_sum + abs(diff * 100)
     if abs(diff * 100) < 1:
         weekly_monday_to_thursday_under_1 = weekly_monday_to_thursday_under_1 + 1
     elif abs(diff * 100) < 2:
@@ -391,8 +406,8 @@ def increment_weekly_open_to_high_counters(diff):
 def increment_monthly_counters(diff):
     global monthly_thursday_under_4, monthly_thursday_under_2, monthly_thursday_under_6, monthly_thursday_under_4, \
         monthly_thursday_under_8, monthly_thursday_under_12, monthly_thursday_under_10, monthly_thursday_under_18, \
-        monthly_thursday_under_14, monthly_thursday_under_20, monthly_thursday_under_16, monthly_thursday_above_20
-
+        monthly_thursday_under_14, monthly_thursday_under_20, monthly_thursday_under_16, monthly_thursday_above_20, monthly_sum
+    monthly_sum = monthly_sum + abs(diff * 100)
     if abs(diff * 100) < 2:
         monthly_thursday_under_2 = monthly_thursday_under_2 + 1
     elif abs(diff * 100) < 4:
@@ -806,3 +821,14 @@ print("SWEET SPOT ABOVE 10 = " + str(
     "{:.2%}".format(1 - (monthly_open_to_high_under_2 / total + monthly_open_to_high_under_4 / total +
                          monthly_open_to_high_under_6 / total + monthly_open_to_high_under_8 / total +
                          monthly_open_to_high_under_10 / total))))
+
+print("------- AVERAGE CHANGES IN 20 YEARS-------- ")
+print()
+total = monday_total
+print("WEEKLY = " + str("{:.2%}".format(weekly_sum / 100 / total)))
+print("FRI TO THU = " + str("{:.2%}".format(friday_sum / 100 / total)))
+print("MON TO THU = " + str("{:.2%}".format(monday_sum / 100 / total)))
+print("TUE TO THU = " + str("{:.2%}".format(tuesday_sum / 100 / total)))
+print("WED TO THU = " + str("{:.2%}".format(wednesday_sum / 100 / total)))
+total = len(monthly_highs)
+print("MONTHLY = " + str("{:.2%}".format(monthly_sum/ 100 / total)))
