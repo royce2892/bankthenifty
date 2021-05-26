@@ -6,6 +6,16 @@
   This is by no means an exhaustive study, so be careful if you use the results for trading<br><br>
 
   Results can also be found in the results.txt page<br><br>
+  
+  
+# AVERAGE CHANGES IN 20 YEARS 
+
+<b>WEEKLY = 2.45% <br>
+FRI TO THU = 1.97% <br>
+MON TO THU = 1.71% <br>
+TUE TO THU = 1.44% <br>
+WED TO THU = 1.07% <br>
+MONTHLY = 5.29% <br></b>
 
 
 # DAILY CHANGE FOR PAST 20 YEARS
