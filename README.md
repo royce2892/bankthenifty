@@ -28,7 +28,7 @@ MONTHLY = 5.29% <br></b>
   UNDER 10 = 0.12%<br>
   ABOVE 10 = 0.08%<br>
   <b>SWEET SPOT   UNDER 2 = 88.76%<br>
-  SWEET SPOT   ABOVE 2 = 11.24%<br></b
+  SWEET SPOT   ABOVE 2 = 11.24%<br></b>
 # WEEKLY CHANGE FOR PAST 20 YEARS 
   UNDER 1 = 29.52%<br>
   UNDER 2 = 26.51%<br>
@@ -41,7 +41,7 @@ MONTHLY = 5.29% <br></b>
   UNDER 10 = 1.10%<br>
   UNDER 15 = 0.80%<br>
   ABOVE 15 = 0.50%<br>
- <b> SWEET SPOT   UNDER 5 = 90.36%<br>
+ <b>SWEET SPOT   UNDER 5 = 90.36%<br>
    SWEET SPOT   ABOVE 5 = 9.64%<br></b>
 # MONDAY TO THURSDAY CHANGE FOR PAST 20 YEARS 
   UNDER 1 = 42.33%<br>
