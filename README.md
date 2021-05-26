@@ -42,7 +42,7 @@ MONTHLY = 5.29% <br></b>
   UNDER 15 = 0.80%<br>
   ABOVE 15 = 0.50%<br>
  <b> SWEET SPOT   UNDER 5 = 90.36%<br>
-  SWEET SPOT   ABOVE 5 = 9.64%<br></b
+   SWEET SPOT   ABOVE 5 = 9.64%<br></b>
 # MONDAY TO THURSDAY CHANGE FOR PAST 20 YEARS 
   UNDER 1 = 42.33%<br>
   UNDER 2 = 27.51%<br>
@@ -70,7 +70,7 @@ MONTHLY = 5.29% <br></b>
   UNDER 15 = 0.42%<br>
   ABOVE 15 = 0.11%<br>
   <b>SWEET SPOT   UNDER 3 = 89.67%<br>
-  SWEET SPOT   ABOVE 3 = 10.33%<br></b
+  SWEET SPOT   ABOVE 3 = 10.33%<br></b>
 # WEDNESDAY TO THURSDAY CHANGE FOR PAST 20 YEARS 
   UNDER 1 = 62.59%<br>
   UNDER 2 = 25.08%<br>
@@ -84,7 +84,7 @@ MONTHLY = 5.29% <br></b>
   UNDER 15 = 0.21%<br>
   ABOVE 15 = 0.11%<br>
   <b>SWEET SPOT   UNDER 3 = 94.52%<br>
-  SWEET SPOT   ABOVE 3 = 5.48%<br></b
+  SWEET SPOT   ABOVE 3 = 5.48%<br></b>
 # FRIDAY TO THURSDAY CHANGE FOR PAST 20 YEARS 
   UNDER 1 = 34.89%<br>
   UNDER 2 = 28.83%<br>
@@ -98,7 +98,7 @@ MONTHLY = 5.29% <br></b>
   UNDER 15 = 0.96%<br>
   ABOVE 15 = 0.21%<br>
   <b>SWEET SPOT   UNDER 5 = 94.36%<br>
-  SWEET SPOT   ABOVE 5 = 5.64%<br></b
+  SWEET SPOT   ABOVE 5 = 5.64%<br></b>
 # WEEKLY OPEN TO LOW CHANGE FOR PAST 20 YEARS 
   UNDER 1 = 27.41%<br>
   UNDER 2 = 20.98%<br>
@@ -112,7 +112,7 @@ MONTHLY = 5.29% <br></b>
   UNDER 15 = 1.00%<br>
   ABOVE 15 = 0.30%<br>
   <b>SWEET SPOT   UNDER 5 = 88.05%<br>
-  SWEET SPOT   ABOVE 5 = 11.95%<br></b
+  SWEET SPOT   ABOVE 5 = 11.95%<br></b>
 # WEEKLY OPEN TO HIGH CHANGE FOR PAST 20 YEARS 
   UNDER 1 = 42.67%<br>
   UNDER 2 = 21.99%<br>
@@ -140,7 +140,7 @@ MONTHLY = 5.29% <br></b>
   UNDER 20 = 0.88%<br>
   ABOVE 20 = 1.32%<br>
   <b>SWEET SPOT   UNDER 10 = 89.91%<br>
-  SWEET SPOT   ABOVE 10 = 10.09%<br></b
+  SWEET SPOT   ABOVE 10 = 10.09%<br></b>
 # MONTHLY OPEN TO LOW CHANGE FOR PAST 20 YEARS 
   UNDER 2 = 25.00%<br>
   UNDER 4 = 17.98%<br>
@@ -154,7 +154,7 @@ MONTHLY = 5.29% <br></b>
   UNDER 20 = 0.88%<br>
   ABOVE 20 = 0.88%<br>
   <b>SWEET SPOT   UNDER 10 = 84.65%<br>
-  SWEET SPOT   ABOVE 10 = 15.35%<br></b
+  SWEET SPOT   ABOVE 10 = 15.35%<br></b>
 # MONTHLY OPEN TO HIGH CHANGE FOR PAST 20 YEARS 
   UNDER 2 = 42.11%<br>
   UNDER 4 = 19.74%<br>
@@ -168,6 +168,6 @@ MONTHLY = 5.29% <br></b>
   UNDER 20 = 0.44%<br>
   ABOVE 20 = 1.75%<br>
   <b>SWEET SPOT   UNDER 10 = 90.79%<br>
-  SWEET SPOT   ABOVE 10 = 9.21%<br> </b
+  SWEET SPOT   ABOVE 10 = 9.21%<br> </b>
 
 
